@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./static/css/mobiscroll.javascript.min.css">
+    <link rel="stylesheet" href="./static/css/android-holo.css">
+    <title>vue-dai</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script src="static/js/mobiscroll.javascript.min.js"></script>
+  <script src="static/js/area_array.js"></script>
+  <script src="static/js/mobiscroll.area.js"></script>
+  <script>
+    mobiscroll.date('#date',{
+      theme: 'android-holo',
+      display: 'center',
+      lang:'zh',
+      min: new Date(1947, 1, 1),
+      max: new Date(2017, 12, 31),
+      dateFormat:'yy-mm-dd',
+      headerText:'出生日期',
+      monthNamesShort:['1','2','3','4','5','6','7','8','9','10','11','12']
+    });
+    mobiscroll.area('#area', {
+      theme: 'android-holo',
+      display: 'center',
+      lang:'zh',
+      showLabel: true
+    });
+  </script>
+</html>
